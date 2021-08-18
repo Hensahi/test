@@ -1,0 +1,593 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 120px 0;
+}
+
+.main-section__us--phar {
+  width: 450px;
+}
+
+.main__title,
+.main-section__us--title {
+  letter-spacing: 1px;
+}
+
+.main__title {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+/*Estilos para la galeria*/
+
+.main__gallery {
+  display: flex;
+  justify-content: space-around;
+  height: 630px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.main__gallery--pics {
+  width: 300px;
+  display: inline-block;
+  margin-right: 0;
+  align-self: flex-start;
+  overflow: hidden;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.people-name {
+  margin: -1.1px;
+}
+
+.pic {
+  width: 100%;
+  opacity: 0.6;
+  transform: scale(1.1);
+  transition: opacity, transform, 0.3s;
+}
+
+.pic:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pic2,
+.pic5 {
+  align-self: flex-end;
+}
+
+.people-name {
+  position: relative;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.ocupation {
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 2.7%;
+  padding-left: 2px;
+}
+
+.ocupation1 {
+  left: 28.85%;
+}
+
+.ocupation2,
+.ocupation5 {
+  top: 24.5%;
+  left: 62.2%;
+}
+
+.ocupation3,
+.ocupation6 {
+  left: 95.5%;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1250px) {
+  .ocupation {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main__gallery--pics {
+    width: 250px;
+  }
+  .people-name {
+    margin: -2.6px;
+  }
+
+  .ocupation1 {
+    left: 27.85%;
+  }
+
+  .ocupation2,
+  .ocupation5 {
+    top: 36.9%;
+    left: 61.2%;
+  }
+
+  .ocupation3,
+  .ocupation6 {
+    left: 94.5%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .main__gallery--pics {
+    width: 230px;
+  }
+  .people-name {
+    margin: -3.2px;
+  }
+
+  .ocupation1 {
+    left: 28.5%;
+  }
+
+  .ocupation2,
+  .ocupation5 {
+    top: 41.7%;
+    left: 61.8%;
+  }
+
+  .ocupation3,
+  .ocupation6 {
+    left: 95.1%;
+  }
+}
+
+@media (max-width: 970px) {
+  .main-section__us--phar {
+    width: 350px;
+  }
+
+  .main__title,
+  .main-section__us--title {
+    letter-spacing: 1px;
+  }
+
+  .main__title {
+    font-size: 38px;
+    font-weight: lighter;
+  }
+
+  .main__gallery--pics {
+    width: 230px;
+  }
+  .people-name {
+    margin: -3.5px;
+  }
+
+  .ocupation1 {
+    left: 28.5%;
+  }
+
+  .ocupation2,
+  .ocupation5 {
+    top: 41.7%;
+    left: 61.8%;
+  }
+
+  .ocupation3,
+  .ocupation6 {
+    left: 95.1%;
+  }
+}
+
+@media (max-width: 950px) {
+  .main__gallery--container {
+    display: flex;
+  }
+
+  .main__gallery {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0;
+  }
+
+  .main__gallery--2 {
+    margin-top: 50px;
+  }
+
+  .main__gallery--pics {
+    width: 250px;
+    height: 100%;
+  }
+
+  .pic2,
+  .pic5 {
+    align-self: stretch;
+  }
+
+  .ocupation {
+    margin-left: 2%;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 61%;
+  }
+
+  .ocupation1 {
+    top: 1.5%;
+  }
+
+  .ocupation2 {
+    top: 34.7%;
+  }
+  .ocupation3 {
+    top: 68.5%;
+  }
+
+  .ocupation5 {
+    top: 49%;
+  }
+
+  .ocupation6 {
+    top: 68.3%;
+  }
+}
+
+@media (max-width: 935px) {
+  .ocupation {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 890px) {
+  .main-section__us--phar {
+    width: 330px;
+  }
+
+  .main__title {
+    font-size: 35px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 71%;
+  }
+}
+
+@media (max-width: 775px) {
+  .main-section {
+    margin-bottom: 50px;
+  }
+
+  .ocupation {
+    margin-left: 7%;
+  }
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 72%;
+  }
+}
+
+@media (max-width: 750px) {
+  .main__gallery--pics {
+    width: 200px;
+  }
+
+  .people-name {
+    margin: -2.2%;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 61%;
+  }
+}
+
+@media (max-width: 720px) {
+  .main__gallery--pics {
+    width: 200px;
+  }
+
+  .people-name {
+    margin: -2.2%;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 65%;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__gallery--pics {
+    width: 200px;
+  }
+
+  .people-name {
+    margin: -2.2%;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 68%;
+  }
+}
+
+@media (max-width: 650px) {
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 71%;
+  }
+}
+
+@media (max-width: 620px) {
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 75%;
+  }
+}
+
+@media (max-width: 590px) {
+  .main-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 79%;
+  }
+}
+
+@media (max-width: 570px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 38%;
+  }
+}
+
+@media (max-width: 540px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 40%;
+  }
+}
+
+@media (max-width: 520px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 43%;
+  }
+}
+
+@media (max-width: 490px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 46%;
+  }
+}
+
+@media (max-width: 460px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .main__gallery--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 48px;
+  }
+
+  .main-section__us {
+    font-size: 110%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 52%;
+  }
+}
+
+@media (max-width: 415px) {
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 54%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 60%;
+  }
+}
+
+@media (max-width: 360px) {
+  .ocupation1,
+  .ocupation2,
+  .ocupation3,
+  .ocupation4,
+  .ocupation5,
+  .ocupation6 {
+    left: 64%;
+  }
+}
+
+/* queries completada */

@@ -1,0 +1,11 @@
+Video reto #1, minuto 1:33.21 uso position: relative directamente en la card__image y no funciona igual que colocando position: absulute a card__image y position: relative a card__header, el centrado usando: 
+
+
+  .card__image {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+No funciona igual, queda por encima den centro en el eje X
+
