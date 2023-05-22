@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/*ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+.header {
+    margin: 30px auto 10px auto;
+    background: url(/asstes/3-people.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    height: 500px;
+    width: 98vw;
+}
+
+.section,
+.section p {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    /* color: #42692f; */
+}
+
+.section p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+/*FIN ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+h1 {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    /* color: #42692f; */
+}
+
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: all .3s;
+}
+
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #42692f;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-weight: 500;
+}
+
+.card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover {
+    background: linear-gradient(#85b86c, #42692f);
+    color: #ffffff;
+}
+
+.card:hover .img-container {
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 992px) {
+
+
+
+    /*ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+    .header {
+        /* margin: 30px auto 10px auto; */
+
+        height: 500px;
+        width: 95vw;
+    }
+
+    .section {
+        width: 950PX;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .section-mision__text {
+        text-align: justify;
+        line-height: 2em;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /*FIN ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+    section {
+        padding: 1em;
+    }
+
+    .card {
+        padding: 5em 1em;
+    }
+
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    /*ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+    .header {
+        /* margin: 30px auto 10px auto; */
+
+        height: 500px;
+        width: 95vw;
+    }
+
+    .section {
+        width: 97vw;
+        margin: 0 auto;
+    }
+
+    .section-mision__text {
+        text-align: justify;
+        line-height: 2em;
+        width: 95%;
+        margin: 0 10px;
+    }
+
+    /*FIN ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+}
+
+@media screen and (min-width: 768px) {
+
+
+    /*ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+    .header {
+        /* margin: 30px auto 10px auto; */
+
+        height: 500px;
+        width: 95vw;
+    }
+
+    .section {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .section-mision__text {
+        text-align: justify;
+        line-height: 2em;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    /*FIN ESTILOS PARA EL HEADER, LA MISION Y VISION*/
+
+
+
+
+    .our-team {
+        padding: 1em 7em;
+    }
+}
